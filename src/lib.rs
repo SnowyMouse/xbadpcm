@@ -6,7 +6,7 @@
 //!
 //! ```
 //! # fn main() -> Result<(), ()> {
-//! use xbox_adpcm::{XboxADPCMDecoder, XboxADPCMDecodeSink};
+//! use xbadpcm::{XboxADPCMDecoder, XboxADPCMDecodeSink};
 //!
 //! let adpcm_data = read_some_adpcm_blocks();
 //! let mut output = [Vec::new(), Vec::new()];
@@ -31,7 +31,7 @@
 //!
 //! ```
 //! # fn main() -> Result<(), ()> {
-//! use xbox_adpcm::{XboxADPCMEncoder, XboxADPCMEncodeSink};
+//! use xbadpcm::{XboxADPCMEncoder, XboxADPCMEncodeSink};
 //!
 //! let (left_channel, right_channel) = read_some_pcm_samples();
 //! let mut output = Vec::new();

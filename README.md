@@ -1,4 +1,4 @@
-# Xbox ADPCM encoder
+# XbadPCM
 
 Safe (and optionally no-std) Rust crate for encoding and decoding Xbox ADPCM blocks.
 
@@ -7,7 +7,7 @@ Safe (and optionally no-std) Rust crate for encoding and decoding Xbox ADPCM blo
 Here is example code for decoding stereo audio.
 
 ```rust
-use xbox_adpcm::{XboxADPCMDecoder, XboxADPCMDecodeSink};
+use xbadpcm::{XboxADPCMDecoder, XboxADPCMDecodeSink};
 
 let adpcm_data = read_some_adpcm_blocks();
 let mut output = [Vec::new(), Vec::new()];
@@ -26,7 +26,7 @@ assert!(!output.is_empty());
 Here is example code for encoding stereo audio.
 
 ```rust
-use xbox_adpcm::{XboxADPCMEncoder, XboxADPCMEncodeSink};
+use xbadpcm::{XboxADPCMEncoder, XboxADPCMEncodeSink};
 
 let (left_channel, right_channel) = read_some_pcm_samples();
 let mut output = Vec::new();
