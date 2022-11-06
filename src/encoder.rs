@@ -85,6 +85,8 @@ impl<'a, E> XboxADPCMEncoder<'a, E> where E: Sized {
 
     /// Encode with the given samples using some samples.
     ///
+    /// Note that this may not always encode all samples passed and may store some in a buffer. To flush the buffer, run [`XboxADPCMEncoder::finish`].
+    ///
     /// # Panics
     ///
     /// Panics if the input has the wrong number of channels or the samples are wrong.

@@ -1,7 +1,7 @@
 [package]
 name = "xbox-adpcm"
 version = "0.1.0"
-description = "Free Rust-only Xbox ADPCM encoder"
+description = "Free Rust-only Xbox ADPCM encoder and decoder"
 license = "GPL-3.0-only"
 
 [features]
