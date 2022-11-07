@@ -12,13 +12,13 @@ use xbadpcm::{XboxADPCMDecoder, XboxADPCMDecodeSink};
 let adpcm_data = read_some_adpcm_blocks();
 let mut output = [Vec::new(), Vec::new()];
 
-// Two channel
+// Two channels
 let mut encoder = XboxADPCMDecoder::new(2, &mut output);
 
 // Decode
 encoder.decode(&adpcm_data).unwrap();
 
-assert!(!output.is_empty());
+assert!(!output[0].is_empty() && output[0].len() == output[1].len());
 ```
 
 ## Encoding example
