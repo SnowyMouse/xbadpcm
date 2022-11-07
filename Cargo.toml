@@ -1,7 +1,7 @@
 [package]
 name = "xbadpcm"
 version = "0.1.1"
-description = "Free Rust-only Xbox ADPCM encoder and decoder"
+description = "Free 100% Rust Xbox ADPCM encoder and decoder"
 repository = "https://github.com/SnowyMouse/xbadpcm"
 license = "GPL-3.0-only"
 categories = ["no-std"]
